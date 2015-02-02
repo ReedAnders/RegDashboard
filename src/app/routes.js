@@ -3,7 +3,8 @@
 /**
  * Route configuration for the RegDashboard module.
  */
-angular.module('RegDashboard').config(['$stateProvider', '$urlRouterProvider',
+angular.module('RegDashboard')
+    .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
         // For unmatched routes
