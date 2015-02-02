@@ -2,7 +2,7 @@
  * Main Controller
  */
 
-angular.module('RegDashboard')
+angular.module('RegDashboard.Common')
     .controller('MainCtrl', ['$scope', '$cookieStore', MainCtrl]);
 
 function MainCtrl($scope, $cookieStore) {

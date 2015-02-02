@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RegDashboard')
+    .module('RegDashboard.Common')
     .directive('rdWidgetFooter', rdWidgetFooter);
 
 function rdWidgetFooter() {

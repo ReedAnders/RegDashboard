@@ -1,1 +1,1 @@
-angular.module('RegDashboard', ['ui.bootstrap', 'ui.router', 'ngCookies']);
+angular.module('RegDashboard.Common', ['ui.bootstrap', 'ui.router', 'ngCookies']);

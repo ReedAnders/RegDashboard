@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RegDashboard')
+    .module('RegDashboard.Common')
     .directive('rdWidgetBody', rdWidgetBody);
 
 function rdWidgetBody() {

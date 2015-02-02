@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * Route configuration for the RegDashboard module.
- */
-angular.module('RegDashboard')
+* Route configuration for the regDashboard module.
+*/
+angular.module('RegDashboard.Common')
     .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
@@ -14,11 +14,11 @@ angular.module('RegDashboard')
         $stateProvider
             .state('index', {
                 url: '/',
-                templateUrl: '../dashboard/dashboard.html'
+                templateUrl: 'src/regDashboard/dashboard/dashboard.html'
             })
             .state('tables', {
                 url: '/tables',
-                templateUrl: '../tables/tables.html'
+                templateUrl: 'src/regDashboard/tables/tables.html'
             });
     }
 ]);

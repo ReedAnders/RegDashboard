@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>RDash AngularJS</title>
+	<title>RegDashboard</title>
   <!-- STYLES -->
   <!-- build:css lib/css/main.min.css -->
   <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
@@ -19,15 +19,16 @@
   <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
   <!-- endbuild -->
   <!-- Custom Scripts -->
-  <script type="text/javascript" src="src/RegDashboard/app/app.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/routes.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/controllers/MainController.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/controllers/AlertsContoller.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/directives/loading.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/directives/widget.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-body.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-footer.js"></script>
-  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-header.js"></script>
+  <script type="text/javascript" src="src/regDashboard/RegDashboard.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/app.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/routes.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/controllers/MainController.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/controllers/AlertsController.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/directives/loading.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/directives/widget.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/directives/widget-body.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/directives/widget-footer.js"></script>
+  <script type="text/javascript" src="src/regDashboard/app/directives/widget-header.js"></script>
 </head>
 <body ng-controller="MainCtrl as main">
   <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>

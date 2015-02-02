@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RegDashboard')
+    .module('RegDashboard.Common')
     .controller('AlertsCtrl', ['$scope', AlertsCtrl]);
 
 function AlertsCtrl($scope) {

@@ -4,7 +4,7 @@
  */
 
 angular
-    .module('RegDashboard')
+    .module('RegDashboard.Common')
     .directive('rdLoading', rdLoading);
 
 function rdLoading() {
