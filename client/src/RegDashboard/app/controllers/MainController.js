@@ -1,5 +1,5 @@
 /**
- * Master Controller
+ * Main Controller
  */
 
 angular.module('RegDashboard')

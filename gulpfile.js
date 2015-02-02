@@ -11,16 +11,16 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html');
 
 var paths = {
-    scripts: 'src/app/**/*.*',
-    styles: 'src/less/**/*.*',
-    images: 'src/img/**/*.*',
-    templates: 'src/templates/**/*.html',
-    index: 'src/index.html',
-    bower_fonts: 'src/components/**/*.{ttf,woff,eof,svg}',
+    scripts: 'client/app/**/*.*',
+    styles: 'client/less/**/*.*',
+    images: 'client/assets/**/*.*',
+    templates: 'client/templates/**/*.html',
+    index: 'client/index.html',
+    bower_fonts: 'client/lib/**/*.{ttf,woff,eof,svg}',
 };
 
 /**
- * Handle bower components from index
+ * Handle bower lib from index
  */
 gulp.task('usemin', function() {
     return gulp.src(paths.index)
@@ -51,7 +51,7 @@ gulp.task('build-custom', ['custom-images', 'custom-js', 'custom-less', 'custom-
 
 gulp.task('custom-images', function() {
     return gulp.src(paths.images)
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('dist/assets'));
 });
 
 gulp.task('custom-js', function() {

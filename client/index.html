@@ -7,27 +7,27 @@
 	<title>RDash AngularJS</title>
   <!-- STYLES -->
   <!-- build:css lib/css/main.min.css -->
-  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/rdash-ui/dist/css/rdash.min.css">
   <!-- endbuild -->
   <!-- SCRIPTS -->
   <!-- build:js lib/js/main.min.js -->
-  <script type="text/javascript" src="components/angular/angular.min.js"></script>
-  <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
-  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="lib/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
   <!-- endbuild -->
   <!-- Custom Scripts -->
-  <script type="text/javascript" src="app/app.js"></script>
-  <script type="text/javascript" src="app/routes.js"></script>
-  <script type="text/javascript" src="app/controllers/master-ctrl.js"></script>
-  <script type="text/javascript" src="app/controllers/alert-ctrl.js"></script>
-  <script type="text/javascript" src="app/directives/loading.js"></script>
-  <script type="text/javascript" src="app/directives/widget.js"></script>
-  <script type="text/javascript" src="app/directives/widget-body.js"></script>
-  <script type="text/javascript" src="app/directives/widget-footer.js"></script>
-  <script type="text/javascript" src="app/directives/widget-header.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/app.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/routes.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/controllers/MainController.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/controllers/AlertsContoller.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/directives/loading.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/directives/widget.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-body.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-footer.js"></script>
+  <script type="text/javascript" src="src/RegDashboard/app/directives/widget-header.js"></script>
 </head>
 <body ng-controller="MainCtrl as main">
   <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
@@ -78,7 +78,7 @@
             <div class="user pull-right">
               <div class="item dropdown">
                 <a href="#" class="dropdown-toggle">
-                  <img src="img/avatar.jpg">
+                  <img src="assets/img/avatar.jpg">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li class="dropdown-header">
@@ -141,7 +141,7 @@
       </div><!-- End Page Content -->
     </div><!-- End Content Wrapper -->
   </div><!-- End Page Wrapper -->
-  <script src="components/head-load/head.load.min.js"></script>
-  <script src="boot.js"></script>
+  <script src="lib/head-load/head.load.min.js"></script>
+  <script src="assets/js/boot.js"></script>
 </body>
 </html>
