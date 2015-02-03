@@ -3,5 +3,6 @@
  */
 angular.module('RegDashboard',
     [
+        //'ngRoute',
         'RegDashboard.Common'
     ]);

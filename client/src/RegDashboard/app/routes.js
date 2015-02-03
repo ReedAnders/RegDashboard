@@ -14,11 +14,11 @@ angular.module('RegDashboard.Common')
         $stateProvider
             .state('index', {
                 url: '/',
-                templateUrl: '**/dashboard.html'
+                templateUrl: 'src/regDashboard/dashboard/template/dashboard.html'
             })
             .state('tables', {
                 url: '/tables',
-                templateUrl: '**/tables.html'
+                templateUrl: 'src/regDashboard/tables/template/tables.html'
             });
     }
 ]);
