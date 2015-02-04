@@ -8,4 +8,23 @@ var myModule = angular.module('RegDashboard',
         'RegDashboard.Dashboard'
     ]);
 
+myModule.config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
+
+        // For unmatched routes
+        $urlRouterProvider.otherwise('/');
+
+        // Application routes
+        $stateProvider
+            .state('index', {
+                url: '/',
+                templateUrl: 'src/regDashboard/dashboard/template/dashboard.html'
+            })
+            .state('tables', {
+                url: '/tables',
+                templateUrl: 'src/regDashboard/tables/template/tables.html'
+            });
+    }
+]);
+
 myModule.constant('Firebase', window.Firebase);

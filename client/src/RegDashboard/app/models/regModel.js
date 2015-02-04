@@ -7,13 +7,13 @@ angular.module('RegDashboard.Common')
             //TODO decouple text and status from view
             regs = [
                 {title: 'RDVMPC001', ip:'238.103.133.37', text:'text-success', status:'fa fa-check'},
-                {title: 'RDVMPC001', ip:'68.66.63.170', text:'text-success', status:'fa fa-check'},
-                {title: 'RDVMPC001', ip:'76.117.212.33',text:'text-danger', status:'fa fa-warning'},
-                {title: 'RDVMPC001', ip:'91.88.224.5', text:'text-success', status:'fa fa-check'},
-                {title: 'RDVMPC001', ip:'197.188.15.93', text:'text-success', status:'fa fa-check'},
-                {title: 'RDVMPC001', ip:'168.85.154.251', text:'text-success', status:'fa fa-check'},
-                {title: 'RDVMPC001', ip:'209.25.191.61', text:'text-danger', status:'fa fa-warning'},
-                {title: 'RDVMPC001', ip:'252.37.192.235', text:'text-success', status:'fa fa-check'}
+                {title: 'RDVMPC002', ip:'68.66.63.170', text:'text-success', status:'fa fa-check'},
+                {title: 'RDVMPC003', ip:'76.117.212.33',text:'text-danger', status:'fa fa-warning'},
+                {title: 'RDVMPC004', ip:'91.88.224.5', text:'text-success', status:'fa fa-check'},
+                {title: 'RDVMPC005', ip:'197.188.15.93', text:'text-success', status:'fa fa-check'},
+                {title: 'RDVMPC006', ip:'168.85.154.251', text:'text-success', status:'fa fa-check'},
+                {title: 'RDVMPC007', ip:'209.25.191.61', text:'text-danger', status:'fa fa-warning'},
+                {title: 'RDVMPC008', ip:'252.37.192.235', text:'text-success', status:'fa fa-check'}
             ],
             users = [
                 {ID: '1', Username: 'Joe Bloggs', Role: 'Super Admin', Account: 'AZ23045'},

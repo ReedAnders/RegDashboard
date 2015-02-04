@@ -9,7 +9,6 @@ head.load(
     { file: "lib/angular-ui-router/release/angular-ui-router.min.js" },
     { file: "src/regDashboard/RegDashboard.js" },
     { file: "src/regDashboard/app/app.js" },
-    { file: "src/regDashboard/app/routes.js" },
     { file: "src/regDashboard/app/controllers/MainController.js" },
     { file: "src/regDashboard/app/controllers/AlertsController.js" },
     { file: "src/regDashboard/app/directives/loading.js" },
