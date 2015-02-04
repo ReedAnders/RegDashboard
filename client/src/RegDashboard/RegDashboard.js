@@ -5,7 +5,7 @@ var myModule = angular.module('RegDashboard',
     [
         //'ngRoute',
         'RegDashboard.Common',
-        'RedDashboard.Dashboard'
+        'RegDashboard.Dashboard'
     ]);
 
 myModule.constant('Firebase', window.Firebase);

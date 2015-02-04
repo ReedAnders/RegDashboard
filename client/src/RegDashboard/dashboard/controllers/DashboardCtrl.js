@@ -1,10 +1,11 @@
 /**
  * Created by reedanderson on 2/2/15.
  */
-angular.module('RegDashboard.Dashboard')
+angular.module('RegDashboard.Dashboard',['RegDashboard.Common'])
     .controller('DashboardCtrl',
     function (regModel) {
         var dashboard = this;
         dashboard.regs = regModel.getRegs();
+        dashboard.users = regModel.getUsers();
 
     });

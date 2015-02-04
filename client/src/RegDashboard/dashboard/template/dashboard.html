@@ -52,7 +52,6 @@
 	</div>
 </div>
 
-<!--TODO ng-repeat/directive-->
 <div class="row" ng-controller="DashboardCtrl as dash">
 	<div class="col-lg-6">
 		<rd-widget>
@@ -61,7 +60,11 @@
       		</rd-widget-header>
       		<rd-widget-body classes="medium no-padding">
 				<div class="table-responsive">
-					<rd-reg ng-repeat="regs in dash.reg"></rd-reg>
+					<table class="table">
+						<tbody ng-repeat="reg in dash.regs">
+							<tr><td>{{reg.title}}</td><td>{{reg.ip}}</td><td><span class={{reg.text}}><i class={{reg.status}}></i></span></td></tr>
+						</tbody>
+					</table>
 				</div>
 			</rd-widget-body>
 		</rd-widget>
@@ -77,10 +80,8 @@
 						<thead>
 							<tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
 						</thead>
-						<tbody>
-							<tr><td class="text-center">1</td><td>Joe Bloggs</td><td>Super Admin</td><td>AZ23045</td></tr>
-							<tr><td class="text-center">2</td><td>Timothy Hernandez</td><td>Admin</td><td>AU24783</td></tr>
-							<tr><td class="text-center">3</td><td>Joe Bickham</td><td>User</td><td>AM23781</td></tr>
+						<tbody ng-repeat="user in dash.users">
+							<tr><td class="text-center">{{user.ID}}</td><td>{{user.Username}}</td><td>{{user.Role}}</td><td>{{user.Account}}</td></tr>
 						</tbody>
 					</table>
         		</div>
