@@ -5,7 +5,8 @@ var myModule = angular.module('RegDashboard',
     [
         //'ngRoute',
         'RegDashboard.Common',
-        'RegDashboard.Dashboard'
+        'RegDashboard.Dashboard',
+        'RegDashboard.Tables'
     ]);
 
 myModule.config(['$stateProvider', '$urlRouterProvider',
