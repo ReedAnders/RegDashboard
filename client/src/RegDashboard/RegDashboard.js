@@ -1,8 +1,11 @@
 /**
  * Created by reedanderson on 2/2/15.
  */
-angular.module('RegDashboard',
+var myModule = angular.module('RegDashboard',
     [
         //'ngRoute',
-        'RegDashboard.Common'
+        'RegDashboard.Common',
+        'RedDashboard.Dashboard'
     ]);
+
+myModule.constant('Firebase', window.Firebase);
