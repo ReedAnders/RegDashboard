@@ -7,5 +7,7 @@ angular.module('RegDashboard.Dashboard',['RegDashboard.Common'])
         var dashboard = this;
         dashboard.regs = regModel.getRegs();
         dashboard.users = regModel.getUsers();
+        dashboard.userCount = regModel.getUserCount();
+        dashboard.serversCount = regModel.getServersCount();
 
     });

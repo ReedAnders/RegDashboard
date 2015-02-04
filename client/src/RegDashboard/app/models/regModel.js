@@ -28,4 +28,12 @@ angular.module('RegDashboard.Common')
         service.getUsers = function (){
             return users
         };
+
+        service.getUserCount = function () {
+            return Object.keys(users).length;
+        };
+
+        service.getServersCount = function () {
+            return Object.keys(regs).length;
+        };
     });
