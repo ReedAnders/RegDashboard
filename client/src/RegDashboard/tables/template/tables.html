@@ -8,21 +8,19 @@
         <rd-widget-body classes="medium no-padding">
           <div class="table-responsive">
             <table class="table">
+              <!--TODO dedug pagination-->
               <tbody ng-repeat="reg in table.regs">
-              <tr><td>{{reg.title}}</td><td>{{reg.ip}}</td><td><span class={{reg.text}}><i class={{reg.status}}></i></span></td></tr>
+                <tr><td>{{reg.title}}</td><td>{{reg.ip}}</td><td><span class={{reg.text}}><i class={{reg.status}}></i></span></td></tr>
               </tbody>
             </table>
           </div>
         </rd-widget-body>
         <rd-widget-footer>
           <ul class="pagination pagination-sm pull-right">
-            <li><a href="#">&laquo;</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
+            <!--<li><a href="#">&laquo;</a></li>-->
+            <li><a ng-repeat="reg in table.regs | pageCount:table.pageSize"
+                   ng-click="table.selectPage($index + 1)" ng-class="table.getPageClass($index + 1)">{{$index + 1}}</a>
+            <!--<li><a href="#">&raquo;</a></li>-->
           </ul>
           <div class="clearfix"></div>
         </rd-widget-footer>
@@ -44,11 +42,10 @@
         </rd-widget-body>
         <rd-widget-footer>
           <ul class="pagination pagination-sm pull-right">
-            <li><a href="#">&laquo;</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">&raquo;</a></li>
+            <!--<li><a href="#">&laquo;</a></li>-->
+            <li><a ng-repeat="reg in table.regs | pageCount:table.pageSize"
+                   ng-click="table.selectPage($index + 1)">{{$index + 1}}</a>
+            <!--<li><a href="#">&raquo;</a></li>-->
           </ul>
           <div class="clearfix"></div>
         </rd-widget-footer>

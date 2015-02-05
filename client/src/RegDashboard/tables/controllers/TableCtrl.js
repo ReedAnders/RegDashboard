@@ -3,11 +3,22 @@
  */
 angular.module('RegDashboard.Tables',['RegDashboard.Common'])
     .controller('TablesCtrl',
-    function (regModel) {
+    function (regModel, serverListPageCount, productListActiveClass) {
         var tables = this;
         tables.regs = regModel.getRegs();
         tables.users = regModel.getUsers();
         tables.userCount = regModel.getUserCount();
         tables.serversCount = regModel.getServersCount();
+
+        tables.selectedPage = 1;
+        tables.pageSize = serverListPageCount;
+
+        tables.selectPage = function (newPage) {
+            tables.selectedPage = newPage;
+        };
+
+        tables.getPageClass = function (page) {
+            return tables.selectedPage == page ? productListActiveClass : "";
+        };
 
     });

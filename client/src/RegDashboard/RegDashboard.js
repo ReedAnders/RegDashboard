@@ -29,3 +29,5 @@ myModule.config(['$stateProvider', '$urlRouterProvider',
 ]);
 
 myModule.constant('Firebase', window.Firebase);
+myModule.constant('productListActiveClass', 'btn-primary');
+myModule.value('serverListPageCount', 10);
