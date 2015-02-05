@@ -16,13 +16,13 @@ angular
         }];
 
         rdAlerts.addAlert = function() {
-            $scope.alerts.push({
+            rdAlerts.alerts.push({
                 msg: 'Another alert!'
             });
         };
 
         rdAlerts.closeAlert = function(index) {
-            $scope.alerts.splice(index, 1);
+            rdAlerts.alerts.splice(index, 1);
         };
 
         //TODO add $cookieStore for alerts
