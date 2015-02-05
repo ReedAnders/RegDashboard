@@ -1,8 +1,8 @@
-<!--<div class="row alerts-container" data-ng-controller="AlertsCtrl" data-ng-show="alerts.length">-->
-  <!--<div class="col-xs-12">-->
-    <!--<alert data-ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>-->
-  <!--</div>-->
-<!--</div>-->
+<div class="row alerts-container" ng-controller="AlertsCtrl as alrt" ng-show="alrt.alerts.length" ng-hide="alrt.hideAlerts">
+  <div class="col-xs-12">
+    <alert ng-repeat="alert in alrt.alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  </div>
+</div>
 
 <div ng-controller="DashboardCtrl as dash">
 	<div class="row">
@@ -90,7 +90,6 @@
 		</div>
 	</div>
 
-	<!--TODO ng-repeat/directive-->
 	<div class="row">
 		<div class="col-lg-6">
 			<rd-widget>

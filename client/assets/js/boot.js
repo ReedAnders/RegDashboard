@@ -19,6 +19,7 @@ head.load(
     { file: "src/regDashboard/app/models/regModel.js" },
     { file: "src/regDashboard/dashboard/dashboard.js" },
     { file: "src/regDashboard/dashboard/controllers/DashboardCtrl.js" },
+    { file: "src/regDashboard/dashboard/directives/AlertDirective.js"},
     { file: "src/regDashboard/dashboard/directives/ChartDirective.js" },
     { file: "src/regDashboard/dashboard/filters/dashFilter.js" },
     { file: "src/regDashboard/tables/tables.js" },

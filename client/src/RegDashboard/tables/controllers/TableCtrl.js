@@ -3,7 +3,7 @@
  */
 angular.module('RegDashboard.Tables',['RegDashboard.Common'])
     .controller('TablesCtrl',
-    function (regModel, serverListPageCount, productListActiveClass) {
+    function (regModel, serverListPageCount) {
         var tables = this;
 
         tables.regs = regModel.getRegs();
@@ -16,10 +16,6 @@ angular.module('RegDashboard.Tables',['RegDashboard.Common'])
 
         tables.selectPage = function (newPage) {
             tables.selectedPage = newPage;
-        };
-
-        tables.getPageClass = function (page) {
-            return tables.selectedPage == page ? productListActiveClass : "";
         };
 
     });

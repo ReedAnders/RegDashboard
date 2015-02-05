@@ -4,24 +4,28 @@
 
 angular
     .module('RegDashboard.Common')
-    .controller('AlertsCtrl', ['$scope', AlertsCtrl]);
+    .controller('AlertsCtrl', function ($cookieStore) {
+        var rdAlerts = this;
 
-function AlertsCtrl($scope) {
-    $scope.alerts = [{
-        type: 'success',
-        msg: 'Thanks for visiting! Feel free to create pull requests to improve the dashboard!'
-    }, {
-        type: 'danger',
-        msg: 'Found a bug? Create an issue with as many details as you can.'
-    }];
+        rdAlerts.alerts = [{
+            type: 'success',
+            msg: 'Thanks for visiting! Feel free to create pull requests to improve the dashboard!'
+        }, {
+            type: 'danger',
+            msg: 'Found a bug? Create an issue with as many details as you can.'
+        }];
 
-    $scope.addAlert = function() {
-        $scope.alerts.push({
-            msg: 'Another alert!'
-        });
-    };
+        rdAlerts.addAlert = function() {
+            $scope.alerts.push({
+                msg: 'Another alert!'
+            });
+        };
 
-    $scope.closeAlert = function(index) {
-        $scope.alerts.splice(index, 1);
-    };
-}
+        rdAlerts.closeAlert = function(index) {
+            $scope.alerts.splice(index, 1);
+        };
+
+        //TODO add $cookieStore for alerts
+        rdAlerts.hideAlerts = true;
+
+    });

@@ -9,6 +9,7 @@
           <div class="table-responsive">
             <table class="table">
               <!--TODO dedug pagination-->
+              <!--<tbody ng-repeat="reg in table.regs | range:table.selectedPage:table.pageSize">-->
               <tbody ng-repeat="reg in table.regs">
                 <tr><td>{{reg.title}}</td><td>{{reg.ip}}</td><td><span class={{reg.text}}><i class={{reg.status}}></i></span></td></tr>
               </tbody>
