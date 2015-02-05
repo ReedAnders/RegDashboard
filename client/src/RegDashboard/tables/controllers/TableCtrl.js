@@ -5,6 +5,7 @@ angular.module('RegDashboard.Tables',['RegDashboard.Common'])
     .controller('TablesCtrl',
     function (regModel, serverListPageCount, productListActiveClass) {
         var tables = this;
+
         tables.regs = regModel.getRegs();
         tables.users = regModel.getUsers();
         tables.userCount = regModel.getUserCount();

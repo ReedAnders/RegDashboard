@@ -5,6 +5,8 @@ angular.module('RegDashboard.Dashboard',['RegDashboard.Common'])
     .controller('DashboardCtrl',
     function (regModel) {
         var dashboard = this;
+
+        dashboard.searchUsername = "";
         dashboard.regs = regModel.getRegs();
         dashboard.users = regModel.getUsers();
         dashboard.userCount = regModel.getUserCount();

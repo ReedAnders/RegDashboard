@@ -72,7 +72,7 @@
 		<div class="col-lg-6">
 			<rd-widget>
 				<rd-widget-header icon="fa-users" title="Users">
-					<input type="text" placeholder="Search" class="form-control input-sm" />
+					<input type="text" placeholder="Search by User" class="form-control input-sm" ng-model="dash.searchUsername" />
 				</rd-widget-header>
 				<rd-widget-body classes="medium no-padding">
 					<div class="table-responsive">
@@ -80,7 +80,7 @@
 							<thead>
 								<tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
 							</thead>
-							<tbody ng-repeat="user in dash.users">
+							<tbody ng-repeat="user in dash.users | regex:'Username':dash.searchUsername" | >
 								<tr><td class="text-center">{{user.ID}}</td><td>{{user.Username}}</td><td>{{user.Role}}</td><td>{{user.Account}}</td></tr>
 							</tbody>
 						</table>
